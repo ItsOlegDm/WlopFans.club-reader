@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@font-face {
+    font-family: Uni-Sans-Bold; 
+    src: url(../fonts/unisans.ttf); 
+}
+@font-face {
+    font-family: Uni-Sans-Thin; 
+    src: url(../fonts/Uni-Sans-Thin.ttf); 
+}
+@font-face {
+    font-family: Lato-Hairline; 
+    src: url(../fonts/Lato-Hairline.ttf); 
+}
+
+@font-face {
+    font-family: Roboto-Regular; 
+    src: url(../fonts/Roboto-Regular.ttf); 
+}
+@font-face {
+    font-family: Roboto-Medium; 
+    src: url(../fonts/Roboto-Medium.ttf); 
+}
+
+
+body {
+    background-color: #454545;
+}
+
+
+.intro {
+    display: flex;
+   align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.intro-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    background: url(../img/intro.jpg) no-repeat center center;
+    background-size: cover;
+     z-index: -1;
+}
+.wloph {
+    font-family: Lato-Hairline;
+    font-size: 192px;
+    z-index: 10;
+    color: white;
+    
+    
+}
+.wloph2 {
+    font-family: Uni-Sans-Thin;
+    font-size: 48px;
+    z-index: 10;
+    color: white;
+    position: relative;
+    left: -10px;
+}
+.textintro {
+    vertical-align: middle;
+    padding-left: 13em;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.center1 {
+    align-items: center;
+
+}
+
+.info {
+    display: flex;
+    max-width: 900px;
+    padding-top: 30px;
+    align-items: center;
+}
+.wlopphoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+   
+}
+
+.photo1 {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+
+.infotext {
+    max-width: 500px;
+    margin-left: 40px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+}
+
+@media screen and (min-width: 901px) {
+    
+}
+@media screen and (max-width: 900px) {
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textintro {
+        padding-left: 0;
+        
+    }
+    .infotext {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        font-size: 21px;
+    }
+    .info {
+      display: block;
+    }
+    .wlopphoto {
+        padding-top: 20px;
+    }
+    .wloph {
+        font-size: 92px;
+    }
+    .wloph2 {
+        font-size: 30px;
+    }
+    .paddingcard {
+        padding-right: 0;
+    }
+    .cards {
+    display: block!important;
+    }
+    
+}
+ /*Карточки*/
+.cards {
+    display: flex;
+    padding-bottom: 10px;
+}
+.card {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    border: 0px solid white;
+    border-radius: 5px;
+}
+.cardimg {
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.cardbutton {
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.paddingcard {
+        height: 65px;
+        width: 65px;
+    }
+.cardb {
+    border-bottom: 1px solid black;
+}
+.cardsh {
+    text-align: center;
+    font-family: Uni-Sans-Bold;
+    padding-top: 55px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 70px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    background-color: #333333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #999999;
+    font-family: 'Rubik', sans-serif;
+
+}
+p.footer,span.footer{
+
+}
+a.footer {
+    text-decoration: none;
+    color: #999999!important;
+
+   
+}
+div.footer {
+    padding: 15px;
+   
+}
+#footer1 {
+    color: #5e5e5e;
+}
+#footer2 {
+    color: #a1a1a1;
+    font-size: 20px;
+    padding-top: 30px;
+}
+/* Стафф карточки */
+.staff {
+ padding-bottom: 30px;
+}
+.staffcard {
+    width: 800px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    border: 0px solid white;
+    border-radius: 5px;
+}
+.staffcard1 {
+    width: 800px;
+    height: 90px;
+    background-color: white;
+    display: flex;
+    border: 0px solid white;
+    border-radius: 5px;
+}
+.staffavatar {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.stafftext {
+    height: 90px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    width:  400px;
+    
+}
+.c1 {
+    width: 800px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.staffh {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    color: #373737;
+}
+.staffh2 {
+    font-family: 'Rubik', sans-serif;
+    color: #606060;
+}
+.staffvkicon {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+.staffavatar {
+    width: 90px;
+    height: 90px;
+}
+#staffvk {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    color: #405895;
+    transition: 0.2s;
+}
+#staffvk:hover {
+    color: #2861f0!important;
+}
+#staffanonbl {
+    font-size: 10px;
+    position: absolute;
+    right: 17.5px;
+    color: #2e2e2e;
+    font-family: Rubik;
+}
+
+
+@media screen and (max-width: 900px) {
+    .staffcard {
+        display: block;
+        width: 300px;
+        height: 373px;
+        position: static;
+    }
+    .staffcard1 {
+        display: block;
+        width: 300px;
+        height: 90px;
+        position: static;
+        justify-content: center;
+        align-items: center;
+    }
+    .staff {
+        display: block;
+    }
+   .staffavatar {
+    width: 300px;
+    height: 300px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    }
+    #staffvk {
+    right: 10px;
+    bottom: 10px;
+    color: #2861f0;
+    }
+    .staffvkicon {
+        padding-top: 6.5px;
+        padding-right: 20px;
+    height: auto;
+    width: auto;
+    display: block;
+    }
+    .stafftext {
+    padding-top: 10px;
+    height: auto;
+    padding-left: 20px;
+    display: block;
+    width:  auto;
+    }
+    #staffanonbl {
+    display: none;
+    }
+    .c1 {
+        width: 300px;
+        height: auto;
+    }
+    .c11 {
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
+    .c2 {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .button-text {
+    background-color: #363636;
+    color: #ededed!important;
+}
+}
+/* Кнопки */
+.button-text {
+    display: block;
+    color: #363636;
+    font-family: Rubik;
+    font-size: 20px;
+    transition: 0.2s;
+    padding: 10px 0 10px 0;
+    border: 3px solid #363636;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-decoration: none;
+    width: 130px;
+
+}
+.button-text:hover {
+    background-color: #363636;
+    color: #ededed;
+}
+/* изменяем полоcу прокрутки */
+/* 
+
+
+::-webkit-scrollbar {
+    width: .65em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(217, 217, 217, 0.0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(170, 170, 170, 0.6);
+    border-radius: 5px;
+    box-shadow: inset 0.05em 0.05em 0 rgba(0, 0, 0, 0.1), inset 0 -0.05em 0 rgba(0, 0, 0, 0.07);
+}*/
+.cardtext2 {
+    font-size: 10px;
+    color: #787878;
+}
+.cardtext {
+    font-size: 20px;
+}
+.transleatedby {
+    padding-top: 10px;
+        padding-bottom: 20px;
+}

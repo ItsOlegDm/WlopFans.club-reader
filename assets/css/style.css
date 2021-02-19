@@ -1,0 +1,21 @@
+
+#content {
+    max-width: 900px;
+    line-height: 0;
+}
+
+img {
+     width: 100%;
+    float:left;
+cursor: pointer;
+padding:0;
+}
+body {
+    background-color: #333333;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
+}
