@@ -462,8 +462,8 @@ a.inside {
 /* хром, сафари */
 ::-webkit-scrollbar { width: 0; }
 
-/* ie 10+ */
+
 .nav { -ms-overflow-style: none; }
 
-/* фф (свойство больше не работает, других способов тоже нет)*/
+
 .nav { overflow: -moz-scrollbars-none; }
