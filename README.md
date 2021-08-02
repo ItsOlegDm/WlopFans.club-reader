@@ -1,4 +1,4 @@
 # Ридер для маньхуа/манхвы
 Пример: https://wlopfans.club/reader/
  
-![image](https://user-images.githubusercontent.com/55553104/115960184-986cd700-a518-11eb-8857-15087b519ee3.png)
+![image](https://user-images.githubusercontent.com/55553104/127928647-c7a0ef6f-6312-4b2c-bb65-b75b6718c538.png)
