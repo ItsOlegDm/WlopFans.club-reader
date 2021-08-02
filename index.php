@@ -73,30 +73,31 @@
 
 
 
+    <center>
+      <div class="reader">
+          <div class="title">
+              <h1>GhostBlade</h1>
+              <h2>Глава <? titlechapter(); ?></h2>
+          </div>
 
-    <div class="reader">
-        <div class="title">
-            <h1>GhostBlade</h1>
-            <h2>Глава <? titlechapter(); ?></h2>
-        </div>
-
-        <div class="readerimg">
-            <div class="readercontrols">
-                    <?pbtn();?>
-                    <a onclick="menu()" class="btn">ОГЛАВЛЕНИЕ</a>
-                    <?nbtn();?>
-            </div>
-            <div>
-            <? chapter(); ?>
-            </div>
-            <div class="readercontrols">
-                    <?pbtn();?>
-                    <a onclick="menu()" class="btn">ОГЛАВЛЕНИЕ</a>
-                    <?nbtn();?>
-            </div>
-        </div>
-        <? echo $comm; ?>
-    </div>
+          <div class="readerimg">
+              <div class="readercontrols">
+                      <?pbtn();?>
+                      <a onclick="menu()" class="btn">ОГЛАВЛЕНИЕ</a>
+                      <?nbtn();?>
+              </div>
+              <div>
+              <? chapter(); ?>
+              </div>
+              <div class="readercontrols">
+                      <?pbtn();?>
+                      <a onclick="menu()" class="btn">ОГЛАВЛЕНИЕ</a>
+                      <?nbtn();?>
+              </div>
+          </div>
+          <? echo $comm; ?>
+      </div>
+    </center>
 
     <span class="footer">© wlopfans.club - all rights reserved.</span>
 </body>

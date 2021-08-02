@@ -32,8 +32,10 @@
          z-index: -1;
          }
          body {
-         position: relative;
-         height: 100%;
+          position: relative;
+          height: 100%;
+          display: flex;
+          justify-content: center;
          }
          div.github-button {
          z-index: 2;
