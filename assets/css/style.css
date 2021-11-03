@@ -31,7 +31,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 .readerimg {
-    line-height: 0;
     width: auto;
     background-color: #474747;
     border-radius: 10px;

@@ -1,5 +1,6 @@
 <?php
-define('IPSKEY', 'TOKEN'); // Токен ipstack.com
+
+define('IPSKEY', 'bf5737af966a501afa73370f49f10c7b');
 $comm = ifua(getIp());
 if ($_GET['ch'] != '') {
     if(is_dir('assets/img/gb/' . $_GET['ch'])) {
@@ -112,15 +113,42 @@ function ifua ($ip) {
     /* dev */
     if ($_GET['debug'] == 'true') {
 
-    echo '<div class = "debug">';
-    echo 'debug: true <br>';
-    echo 'ip: '.$ip;
-    echo '<br>';
-    echo 'country: '.$countrycode.'<br>';
-    if ($_GET['vk'] == 'true') {$countrycode = 'RU'; echo 'cchange: true <br>';} else { echo 'cchange: false <br>';}
-    if ($countrycode != 'UA') { echo 'comm: true <br>';} else {echo 'comm: false <br>';}
-    echo '</div>';
+    echo '<div class = "debug">
+Debug: true 
+<br>
+Ip: '.$ip.'
+<br>
+Country: '.$countrycode.'
+<br>';
+if ($_GET['vk'] == 'true') {$countrycode = 'RU'; echo 'CChange: true <br>';} else { echo 'CChange: false <br>';}
+if ($countrycode != 'UA') { echo 'Comm: true <br>';} else {echo 'Comm: false <br>';}
+echo 'Loaded: '.counter('assets/img/gb/' . $_GET['ch'] . '/').' images
+<br>
+Chapter: '.str_replace("-", ".", $_GET['ch']).'
+<br>
+Reader version: v2.0.1
+<br><br><br><br>
+<div style="color: #de6161"><b>
+ВАЖНО!
+<br>
+Мы не сохраняем ваш IP!
+<br>
+Он используется только для
+<br>
+получения страны, чтоб у 
+<br>
+украинцев работал ридер!
+<br>
+(Отключаются вк комментарии)</b></div>
+';
+// if (PREVIOUS != 'none') {echo 'Previous chapter available: true <br>';} else {echo 'Previous chapter available: false <br>';}
+// if (NEXT != 'none') {echo 'Next chapter aviable: true <br>';} else {echo 'Next chapter aviable: false <br>';}
+echo '</div>';
     }
+    if ($_GET['vzlomadminki'] == 'true' || $_GET['admin'] == 'true') {
+        echo '<script type="text/javascript"> window.location="https://wlopfans.club/natribu/index.php";</script>';
+        exit;
+        }
     /* dev */
 
     if ($countrycode != 'UA') {
@@ -137,3 +165,14 @@ function comments ($comm) {
     echo $comm;
 }
 
+function mainh () {
+    if ($_GET['int'] != '') {
+        if (file_exists('assets/interviews/'.$_GET['int'].'.php')) {
+            require_once('assets/interviews/'.$_GET['int'].'.php');
+        }
+        require_once('assets/php/interview.php');
+    } else {
+        require_once('assets/php/comic.php');
+    }
+}
+    
