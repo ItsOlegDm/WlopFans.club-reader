@@ -9,8 +9,8 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     font-family: GothamPro,Arial, Helvetica, sans-serif;
     background-color: #454545;
     color: #CCCCCC;
@@ -175,7 +175,7 @@ body::-webkit-scrollbar-thumb {
     color:#878787;
 }
 a.btn, a.btn_inactive {
-    height: 20px;
+    line-height: 20px;
 }
 a {
     color: #75a9da;
