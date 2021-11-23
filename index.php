@@ -19,6 +19,7 @@
     <style>
         .menuacc {
             display: none;
+            opacity: 0;
           }
     </style>
     <?
